@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'brandon-black';
+    src: url(../fonts/brandon-black.otf);
+}
+
+@font-face {
+    font-family: 'brandon-bold';
+    src: url(../fonts/brandon-bold.otf);
+}
+
+@font-face {
+    font-family: 'brandon-regular';
+    src: url(../fonts/brandon-regular.otf);
+}
+
+@font-face {
+    font-family: 'brandon-xlight';
+    src: url(../fonts/brandon-xlight.otf);
+}
+
+@font-face {
+    font-family: 'brandon-light';
+    src: url(../fonts/brandon-light.otf);
+}
+
+@font-face {
+    font-family: 'brandon-medium';
+    src: url(../fonts/brandon-med.otf);
+}
+
+@font-face {
+    font-family: 'brandon-regular-italic';
+    src: url(../fonts/brandon-regular-italic.otf);
+}
+
+@font-face {
+    font-family: 'brandon-xlight-italic';
+    src: url(../fonts/brandon-xlight-italic.otf);
+}
