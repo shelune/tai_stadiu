@@ -162,15 +162,30 @@ li.active a {
     font-family: 'brandon-light', sans-serif;
     font-weight: 300;
     font-size: 44px;
-    position: fixed;
     right: 0;
     left: 0;
     text-align: center;
 }
 
+.letter-panels {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 37px 128px;
+}
+
 .letter {
     color: #ff584c;
     text-transform: uppercase;
+    text-align: center;
+    position: relative;
 }
 
 .project-name {
@@ -178,11 +193,51 @@ li.active a {
     line-height: 1;
     font-size: 18px;
     font-family: 'brandon-black', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-bottom: 25px;
 }
 
 .role {
-    font-family: 'brandon-light', sans-serif;
+    font-family: 'brandon-regular', sans-serif;
     font-size: 12px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-top: 38px;
+    line-height: 12px;
+}
+
+.descriptions {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    -webkit-animation: ;
+    animation: ;
+}
+
+.descriptions:hover {
+    background: rgba(17, 17, 17, 0.8);
+    cursor: pointer;
+    opacity: 1;
 }
 
 
