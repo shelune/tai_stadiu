@@ -1,12 +1,27 @@
+/*jslint browser: true*/
+/*jslint node: true*/
+/*global $, jQuery, alert*/
+"use strict";
+
 $(document).ready(function () {
-    $('.descriptions').mouseover(function () {
-        $('.project-name').css({
-            "opacity" : "1",
-            "top" : "50%"
+    $('.letter').mouseenter(function () {
+        $('.project-name', this).css({
+            "opacity": "1",
+            "padding-bottom" : "25px"
+        });
+        $('.role', this).css({
+            "opacity": "1",
+            "padding-top" : "38px"
         });
     });
-    $('.descriptions').mouseleave(function () {
-        $('.description').css("opacity", "0");
-        $('.project-name').css("top", "46%");
+    $('.letter').mouseleave(function () {
+        $('.project-name', this).css({
+            "opacity": "0",
+            "padding-bottom" : "45px"
+        });
+        $('.role', this).css({
+            "opacity": "0",
+            "padding-top" : "58px"
+        });
     });
 });
