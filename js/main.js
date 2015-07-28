@@ -4,6 +4,19 @@
 "use strict";
 
 $(document).ready(function () {
+    // Header resized as scroll
+    $(window).scroll(function () {
+        var currentY = window.pageYOffset || document.documentElement.scrollTop,
+            yLimit = 300,
+            target = $('.header');
+        if (currentY > yLimit) {
+            target.addClass('header-shrink');
+        } else {
+            target.removeClass('header-shrink');
+        }
+    });
+
+    // Panel hovering effect (needs some fixes)
     $('.letter').mouseenter(function () {
         $('.project-name', this).css({
             "opacity": "1",
