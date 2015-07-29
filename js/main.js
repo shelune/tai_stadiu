@@ -17,6 +17,7 @@ $(document).ready(function () {
     });
 
     // Panel hovering effect (needs some fixes)
+    /*
     $('.letter').mouseenter(function () {
         $('.project-name', this).css({
             "opacity": "1",
@@ -37,4 +38,5 @@ $(document).ready(function () {
             "padding-top" : "58px"
         });
     });
+    */
 });

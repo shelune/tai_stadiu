@@ -271,15 +271,77 @@ li.active a {
     line-height: 1;
     font-size: 18px;
     font-family: 'brandon-black', sans-serif;
-    padding-bottom: 45px;
+}
+
+.descriptions:hover .project-name {
+    -webkit-animation: 0.35s cubic-bezier(0.2, 0.3, 0.25, 0.9) 1.2s normal forwards 1 nameDown;
+    animation: 0.35s cubic-bezier(0.2, 0.3, 0.25, 0.9) 1.2s normal forwards 1 nameDown;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+@-webkit-keyframes nameDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-45px);
+        transform: translateY(-45px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(-22px);
+        transform: translateY(-22px);
+    }
+}
+
+@keyframes nameDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-45px);
+        transform: translateY(-45px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(-22px);
+        transform: translateY(-22px);
+    }
 }
 
 .role {
     font-family: 'brandon-light', sans-serif;
     font-size: 12px;
     letter-spacing: 2px;
-    padding-top: 58px;
     line-height: 12px;
+}
+
+.descriptions:hover .role {
+    -webkit-animation: 0.35s cubic-bezier(0.2, 0.3, 0.25, 0.9) 1.2s normal forwards 1 roleUp;
+    animation: 0.35s cubic-bezier(0.2, 0.3, 0.25, 0.9) 1.2s normal forwards 1 roleUp;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+@-webkit-keyframes roleUp {
+    0% {
+        -webkit-transform: translateY(58px);
+        transform: translateY(58px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(11px);
+        transform: translateY(11px);
+    }
+}
+
+@keyframes roleUp {
+    0% {
+        -webkit-transform: translateY(58px);
+        transform: translateY(58px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(11px);
+        transform: translateY(11px);
+    }
 }
 
 .copyright {
@@ -377,8 +439,9 @@ li.active a {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 47em) {
     /* Style adjustments for viewports that meet the condition */
+
 }
 
 @media print,
