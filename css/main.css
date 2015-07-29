@@ -238,6 +238,37 @@ li.active a {
     margin: 0 15px 35px 20px;
     cursor: pointer;
     display: table;
+    opacity: 0;
+    -webkit-animation: 1s cubic-bezier(0.2, 0.3, 0.25, 0.9) 1.2s normal forwards 1 items-show;
+    animation: 1s cubic-bezier(0.2, 0.3, 0.25, 0.9) 1.2s normal forwards 1 items-show;
+}
+
+@-webkit-keyframes items-show{
+    0%{
+        opacity:0;
+        -webkit-transform:translateY(40px);
+        transform:translateY(40px)
+    }
+
+    100%{
+        opacity:1;
+        -webkit-transform:translateY(0);
+        transform:translateY(0)
+    }
+}
+
+@keyframes items-show{
+    0%{
+        opacity:0;
+        -webkit-transform:translateY(40px);
+        transform:translateY(40px)
+    }
+
+    100%{
+        opacity:1;
+        -webkit-transform:translateY(0);
+        transform:translateY(0)
+    }
 }
 
 .descriptions > div {
@@ -283,8 +314,8 @@ li.active a {
 @-webkit-keyframes nameDown {
     0% {
         opacity: 0;
-        -webkit-transform: translateY(-45px);
-        transform: translateY(-45px);
+        -webkit-transform: translateY(-32px);
+        transform: translateY(-32px);
     }
     100% {
         opacity: 1;
@@ -296,8 +327,8 @@ li.active a {
 @keyframes nameDown {
     0% {
         opacity: 0;
-        -webkit-transform: translateY(-45px);
-        transform: translateY(-45px);
+        -webkit-transform: translateY(-32px);
+        transform: translateY(-32px);
     }
     100% {
         opacity: 1;
@@ -322,8 +353,8 @@ li.active a {
 
 @-webkit-keyframes roleUp {
     0% {
-        -webkit-transform: translateY(58px);
-        transform: translateY(58px);
+        -webkit-transform: translateY(21px);
+        transform: translateY(21px);
     }
     100% {
         opacity: 1;
@@ -334,8 +365,8 @@ li.active a {
 
 @keyframes roleUp {
     0% {
-        -webkit-transform: translateY(58px);
-        transform: translateY(58px);
+        -webkit-transform: translateY(21px);
+        transform: translateY(21px);
     }
     100% {
         opacity: 1;

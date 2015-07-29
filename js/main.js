@@ -4,7 +4,15 @@
 "use strict";
 
 $(document).ready(function () {
-    // Header resized as scroll
+    $('.letter').each(function (i, el) {
+        setTimeout(function () {
+            $(el).animate({
+                "top": "-=40"
+            });
+        }, 400 + (i * 200));
+    });
+
+    // Header resized as scrolling
     $(window).scroll(function () {
         var currentY = window.pageYOffset || document.documentElement.scrollTop,
             yLimit = 300,
@@ -16,7 +24,7 @@ $(document).ready(function () {
         }
     });
 
-    // Panel hovering effect (needs some fixes)
+    // Panel hovering effect (replaced by css animations)
     /*
     $('.letter').mouseenter(function () {
         $('.project-name', this).css({
