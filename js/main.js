@@ -4,6 +4,7 @@
 "use strict";
 
 $(document).ready(function () {
+    /*
     $('.letter').each(function (i, el) {
         setTimeout(function () {
             $(el).animate({
@@ -11,6 +12,7 @@ $(document).ready(function () {
             });
         }, 400 + (i * 200));
     });
+    */
 
     // Header resized as scrolling
     $(window).scroll(function () {
